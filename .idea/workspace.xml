@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d03ddd20-47f2-4b55-bc8b-66236d99136f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example.log" beforeDir="false" afterPath="$PROJECT_DIR$/example.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/example.log.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dupatbot-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/dupatbot-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,13 +40,16 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZRButyifRqnUx6Z0woOtPSpCgC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
@@ -73,7 +80,14 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="448" y="187" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584882409075">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="448" y="187" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1584882409075" />
     <state x="488" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1584801899346">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -82,22 +96,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1584800583423" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1584876021144">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1584882204028">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1584876021144" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1584876021144">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1584882204028" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1584882204027">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1584876021144" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1584876021144">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1584882204027" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1584882204027">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1584876021144" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1584876021144">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1584882204027" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1584882204028">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1584876021144" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1584882204028" />
     <state x="175" y="18" key="SettingsEditor" timestamp="1584800208159">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
