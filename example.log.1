@@ -1,62 +1,55 @@
-ERROR dupatbot Telegram Connection org.telegram.telegrambots.updatesreceivers.DefaultBotSession - Error getting updates
-org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [401] Unauthorized
-	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:118)
-	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:263)
-	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:194)
-DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
-DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
 DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 515][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-515: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-515: set socket timeout to 75000
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 75000
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Executing request POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> charset: UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Content-Length: 67
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Content-Type: application/json; charset=UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Host: api.telegram.org
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Connection: Keep-Alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Accept-Encoding: gzip,deflate
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "charset: UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Content-Length: 67[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Host: api.telegram.org[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Connection: Keep-Alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "HTTP/1.1 401 Unauthorized[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Server: nginx/1.16.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Date: Sun, 22 Mar 2020 15:59:42 GMT[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Content-Type: application/json[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Content-Length: 58[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Connection: keep-alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << HTTP/1.1 401 Unauthorized
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Server: nginx/1.16.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Date: Sun, 22 Mar 2020 15:59:42 GMT
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Content-Type: application/json
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Content-Length: 58
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Connection: keep-alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Access-Control-Allow-Origin: *
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> charset: UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Length: 67
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Type: application/json; charset=UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Host: api.telegram.org
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Connection: Keep-Alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Accept-Encoding: gzip,deflate
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "charset: UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Length: 67[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Host: api.telegram.org[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "HTTP/1.1 401 Unauthorized[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Server: nginx/1.16.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Date: Sun, 22 Mar 2020 16:07:05 GMT[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Type: application/json[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Length: 58[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Connection: keep-alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << HTTP/1.1 401 Unauthorized
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Server: nginx/1.16.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Date: Sun, 22 Mar 2020 16:07:05 GMT
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Type: application/json
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Length: 58
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Connection: keep-alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Allow-Origin: *
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Authentication required
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - api.telegram.org:443 requested authentication
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Response contains no authentication challenges
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 515][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-515: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 515][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 522][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
 ERROR dupatbot Telegram Connection org.telegram.telegrambots.updatesreceivers.DefaultBotSession - Error getting updates
 org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [401] Unauthorized
 	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:118)
@@ -65,57 +58,57 @@ org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error get
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
 DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 515][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-515: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-515: set socket timeout to 75000
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 75000
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Executing request POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> charset: UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Content-Length: 67
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Content-Type: application/json; charset=UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Host: api.telegram.org
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Connection: Keep-Alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Accept-Encoding: gzip,deflate
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "charset: UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Content-Length: 67[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Host: api.telegram.org[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Connection: Keep-Alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "HTTP/1.1 401 Unauthorized[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Server: nginx/1.16.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Date: Sun, 22 Mar 2020 15:59:43 GMT[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Content-Type: application/json[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Content-Length: 58[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Connection: keep-alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << HTTP/1.1 401 Unauthorized
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Server: nginx/1.16.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Date: Sun, 22 Mar 2020 15:59:43 GMT
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Content-Type: application/json
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Content-Length: 58
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Connection: keep-alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Access-Control-Allow-Origin: *
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> charset: UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Length: 67
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Type: application/json; charset=UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Host: api.telegram.org
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Connection: Keep-Alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Accept-Encoding: gzip,deflate
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "charset: UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Length: 67[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Host: api.telegram.org[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "HTTP/1.1 401 Unauthorized[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Server: nginx/1.16.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Date: Sun, 22 Mar 2020 16:07:06 GMT[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Type: application/json[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Length: 58[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Connection: keep-alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << HTTP/1.1 401 Unauthorized
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Server: nginx/1.16.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Date: Sun, 22 Mar 2020 16:07:06 GMT
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Type: application/json
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Length: 58
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Connection: keep-alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Allow-Origin: *
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Authentication required
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - api.telegram.org:443 requested authentication
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Response contains no authentication challenges
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 515][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-515: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 515][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 522][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
 ERROR dupatbot Telegram Connection org.telegram.telegrambots.updatesreceivers.DefaultBotSession - Error getting updates
 org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [401] Unauthorized
 	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:118)
@@ -124,57 +117,57 @@ org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error get
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
 DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 515][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-515: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-515: set socket timeout to 75000
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 75000
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Executing request POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> charset: UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Content-Length: 67
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Content-Type: application/json; charset=UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Host: api.telegram.org
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Connection: Keep-Alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Accept-Encoding: gzip,deflate
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "charset: UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Content-Length: 67[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Host: api.telegram.org[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Connection: Keep-Alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "HTTP/1.1 401 Unauthorized[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Server: nginx/1.16.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Date: Sun, 22 Mar 2020 15:59:44 GMT[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Content-Type: application/json[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Content-Length: 58[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Connection: keep-alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << HTTP/1.1 401 Unauthorized
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Server: nginx/1.16.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Date: Sun, 22 Mar 2020 15:59:44 GMT
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Content-Type: application/json
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Content-Length: 58
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Connection: keep-alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Access-Control-Allow-Origin: *
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> charset: UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Length: 67
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Type: application/json; charset=UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Host: api.telegram.org
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Connection: Keep-Alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Accept-Encoding: gzip,deflate
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "charset: UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Length: 67[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Host: api.telegram.org[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "HTTP/1.1 401 Unauthorized[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Server: nginx/1.16.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Date: Sun, 22 Mar 2020 16:07:07 GMT[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Type: application/json[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Length: 58[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Connection: keep-alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << HTTP/1.1 401 Unauthorized
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Server: nginx/1.16.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Date: Sun, 22 Mar 2020 16:07:07 GMT
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Type: application/json
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Length: 58
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Connection: keep-alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Allow-Origin: *
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Authentication required
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - api.telegram.org:443 requested authentication
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Response contains no authentication challenges
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 515][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-515: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 515][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 522][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
 ERROR dupatbot Telegram Connection org.telegram.telegrambots.updatesreceivers.DefaultBotSession - Error getting updates
 org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [401] Unauthorized
 	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:118)
@@ -183,57 +176,57 @@ org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error get
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
 DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 515][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-515: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-515: set socket timeout to 75000
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 75000
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Executing request POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> charset: UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Content-Length: 67
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Content-Type: application/json; charset=UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Host: api.telegram.org
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Connection: Keep-Alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 >> Accept-Encoding: gzip,deflate
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "charset: UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Content-Length: 67[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Host: api.telegram.org[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Connection: Keep-Alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "HTTP/1.1 401 Unauthorized[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Server: nginx/1.16.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Date: Sun, 22 Mar 2020 15:59:45 GMT[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Content-Type: application/json[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Content-Length: 58[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Connection: keep-alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-515 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << HTTP/1.1 401 Unauthorized
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Server: nginx/1.16.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Date: Sun, 22 Mar 2020 15:59:45 GMT
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Content-Type: application/json
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Content-Length: 58
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Connection: keep-alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Access-Control-Allow-Origin: *
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-515 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> charset: UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Length: 67
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Type: application/json; charset=UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Host: api.telegram.org
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Connection: Keep-Alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Accept-Encoding: gzip,deflate
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "charset: UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Length: 67[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Host: api.telegram.org[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "HTTP/1.1 401 Unauthorized[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Server: nginx/1.16.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Date: Sun, 22 Mar 2020 16:07:08 GMT[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Type: application/json[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Length: 58[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Connection: keep-alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << HTTP/1.1 401 Unauthorized
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Server: nginx/1.16.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Date: Sun, 22 Mar 2020 16:07:08 GMT
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Type: application/json
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Length: 58
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Connection: keep-alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Allow-Origin: *
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Authentication required
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - api.telegram.org:443 requested authentication
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Response contains no authentication challenges
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 515][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-515: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 515][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 522][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
 ERROR dupatbot Telegram Connection org.telegram.telegrambots.updatesreceivers.DefaultBotSession - Error getting updates
 org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [401] Unauthorized
 	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:118)
@@ -242,71 +235,57 @@ org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error get
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
 DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.CPool - Connection [id:515][route:{s}->https://api.telegram.org:443][state:null] expired @ Sun Mar 22 22:59:46 ICT 2020
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-515: Close connection
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 516][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://api.telegram.org:443
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to api.telegram.org/149.154.167.220:443
-DEBUG dupatbot Telegram Connection org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to api.telegram.org/149.154.167.220:443 with timeout 75000
-DEBUG dupatbot Telegram Connection org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
-DEBUG dupatbot Telegram Connection org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
-DEBUG dupatbot Telegram Connection org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
-DEBUG dupatbot Telegram Connection org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
-DEBUG dupatbot Telegram Connection org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
-DEBUG dupatbot Telegram Connection org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-DEBUG dupatbot Telegram Connection org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=api.telegram.org, OU=Domain Control Validated
-DEBUG dupatbot Telegram Connection org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [api.telegram.org, www.api.telegram.org]
-DEBUG dupatbot Telegram Connection org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=Go Daddy Secure Certificate Authority - G2, OU=http://certs.godaddy.com/repository/, O="GoDaddy.com, Inc.", L=Scottsdale, ST=Arizona, C=US
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.1.9:51665<->149.154.167.220:443
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 75000
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 75000
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Executing request POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> charset: UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Content-Length: 67
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Content-Type: application/json; charset=UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Host: api.telegram.org
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Connection: Keep-Alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Accept-Encoding: gzip,deflate
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "charset: UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Content-Length: 67[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Host: api.telegram.org[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Connection: Keep-Alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "HTTP/1.1 401 Unauthorized[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Server: nginx/1.16.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Date: Sun, 22 Mar 2020 15:59:47 GMT[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Content-Type: application/json[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Content-Length: 58[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Connection: keep-alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << HTTP/1.1 401 Unauthorized
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Server: nginx/1.16.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Date: Sun, 22 Mar 2020 15:59:47 GMT
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Content-Type: application/json
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Content-Length: 58
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Connection: keep-alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Access-Control-Allow-Origin: *
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> charset: UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Length: 67
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Type: application/json; charset=UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Host: api.telegram.org
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Connection: Keep-Alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Accept-Encoding: gzip,deflate
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "charset: UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Length: 67[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Host: api.telegram.org[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "HTTP/1.1 401 Unauthorized[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Server: nginx/1.16.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Date: Sun, 22 Mar 2020 16:07:09 GMT[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Type: application/json[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Length: 58[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Connection: keep-alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << HTTP/1.1 401 Unauthorized
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Server: nginx/1.16.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Date: Sun, 22 Mar 2020 16:07:09 GMT
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Type: application/json
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Length: 58
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Connection: keep-alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Allow-Origin: *
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Authentication required
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - api.telegram.org:443 requested authentication
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Response contains no authentication challenges
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 516][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 516][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 522][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
 ERROR dupatbot Telegram Connection org.telegram.telegrambots.updatesreceivers.DefaultBotSession - Error getting updates
 org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [401] Unauthorized
 	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:118)
@@ -315,57 +294,57 @@ org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error get
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
 DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 516][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 75000
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 75000
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Executing request POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> charset: UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Content-Length: 67
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Content-Type: application/json; charset=UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Host: api.telegram.org
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Connection: Keep-Alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Accept-Encoding: gzip,deflate
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "charset: UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Content-Length: 67[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Host: api.telegram.org[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Connection: Keep-Alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "HTTP/1.1 401 Unauthorized[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Server: nginx/1.16.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Date: Sun, 22 Mar 2020 15:59:48 GMT[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Content-Type: application/json[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Content-Length: 58[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Connection: keep-alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << HTTP/1.1 401 Unauthorized
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Server: nginx/1.16.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Date: Sun, 22 Mar 2020 15:59:48 GMT
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Content-Type: application/json
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Content-Length: 58
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Connection: keep-alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Access-Control-Allow-Origin: *
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> charset: UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Length: 67
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Type: application/json; charset=UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Host: api.telegram.org
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Connection: Keep-Alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Accept-Encoding: gzip,deflate
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "charset: UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Length: 67[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Host: api.telegram.org[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "HTTP/1.1 401 Unauthorized[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Server: nginx/1.16.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Date: Sun, 22 Mar 2020 16:07:10 GMT[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Type: application/json[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Length: 58[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Connection: keep-alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << HTTP/1.1 401 Unauthorized
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Server: nginx/1.16.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Date: Sun, 22 Mar 2020 16:07:10 GMT
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Type: application/json
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Length: 58
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Connection: keep-alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Allow-Origin: *
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Authentication required
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - api.telegram.org:443 requested authentication
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Response contains no authentication challenges
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 516][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 516][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 522][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
 ERROR dupatbot Telegram Connection org.telegram.telegrambots.updatesreceivers.DefaultBotSession - Error getting updates
 org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [401] Unauthorized
 	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:118)
@@ -374,57 +353,57 @@ org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error get
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
 DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 516][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 75000
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 75000
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Executing request POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> charset: UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Content-Length: 67
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Content-Type: application/json; charset=UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Host: api.telegram.org
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Connection: Keep-Alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Accept-Encoding: gzip,deflate
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "charset: UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Content-Length: 67[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Host: api.telegram.org[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Connection: Keep-Alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "HTTP/1.1 401 Unauthorized[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Server: nginx/1.16.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Date: Sun, 22 Mar 2020 15:59:49 GMT[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Content-Type: application/json[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Content-Length: 58[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Connection: keep-alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << HTTP/1.1 401 Unauthorized
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Server: nginx/1.16.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Date: Sun, 22 Mar 2020 15:59:49 GMT
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Content-Type: application/json
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Content-Length: 58
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Connection: keep-alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Access-Control-Allow-Origin: *
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> charset: UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Length: 67
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Type: application/json; charset=UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Host: api.telegram.org
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Connection: Keep-Alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Accept-Encoding: gzip,deflate
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "charset: UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Length: 67[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Host: api.telegram.org[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "HTTP/1.1 401 Unauthorized[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Server: nginx/1.16.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Date: Sun, 22 Mar 2020 16:07:11 GMT[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Type: application/json[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Length: 58[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Connection: keep-alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << HTTP/1.1 401 Unauthorized
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Server: nginx/1.16.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Date: Sun, 22 Mar 2020 16:07:11 GMT
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Type: application/json
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Length: 58
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Connection: keep-alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Allow-Origin: *
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Authentication required
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - api.telegram.org:443 requested authentication
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Response contains no authentication challenges
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 516][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 516][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 522][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
 ERROR dupatbot Telegram Connection org.telegram.telegrambots.updatesreceivers.DefaultBotSession - Error getting updates
 org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [401] Unauthorized
 	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:118)
@@ -433,57 +412,57 @@ org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error get
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
 DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 516][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 75000
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 75000
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Executing request POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> charset: UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Content-Length: 67
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Content-Type: application/json; charset=UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Host: api.telegram.org
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Connection: Keep-Alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Accept-Encoding: gzip,deflate
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "charset: UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Content-Length: 67[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Host: api.telegram.org[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Connection: Keep-Alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "HTTP/1.1 401 Unauthorized[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Server: nginx/1.16.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Date: Sun, 22 Mar 2020 15:59:50 GMT[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Content-Type: application/json[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Content-Length: 58[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Connection: keep-alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << HTTP/1.1 401 Unauthorized
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Server: nginx/1.16.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Date: Sun, 22 Mar 2020 15:59:50 GMT
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Content-Type: application/json
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Content-Length: 58
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Connection: keep-alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Access-Control-Allow-Origin: *
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> charset: UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Length: 67
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Type: application/json; charset=UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Host: api.telegram.org
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Connection: Keep-Alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Accept-Encoding: gzip,deflate
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "charset: UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Length: 67[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Host: api.telegram.org[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "HTTP/1.1 401 Unauthorized[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Server: nginx/1.16.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Date: Sun, 22 Mar 2020 16:07:12 GMT[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Type: application/json[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Length: 58[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Connection: keep-alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << HTTP/1.1 401 Unauthorized
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Server: nginx/1.16.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Date: Sun, 22 Mar 2020 16:07:12 GMT
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Type: application/json
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Length: 58
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Connection: keep-alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Allow-Origin: *
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Authentication required
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - api.telegram.org:443 requested authentication
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Response contains no authentication challenges
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 516][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 516][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 522][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
 ERROR dupatbot Telegram Connection org.telegram.telegrambots.updatesreceivers.DefaultBotSession - Error getting updates
 org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [401] Unauthorized
 	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:118)
@@ -492,57 +471,57 @@ org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error get
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
 DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 516][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 75000
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 75000
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Executing request POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> charset: UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Content-Length: 67
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Content-Type: application/json; charset=UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Host: api.telegram.org
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Connection: Keep-Alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Accept-Encoding: gzip,deflate
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "charset: UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Content-Length: 67[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Host: api.telegram.org[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Connection: Keep-Alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "HTTP/1.1 401 Unauthorized[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Server: nginx/1.16.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Date: Sun, 22 Mar 2020 15:59:51 GMT[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Content-Type: application/json[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Content-Length: 58[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Connection: keep-alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << HTTP/1.1 401 Unauthorized
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Server: nginx/1.16.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Date: Sun, 22 Mar 2020 15:59:51 GMT
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Content-Type: application/json
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Content-Length: 58
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Connection: keep-alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Access-Control-Allow-Origin: *
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> charset: UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Length: 67
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Type: application/json; charset=UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Host: api.telegram.org
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Connection: Keep-Alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Accept-Encoding: gzip,deflate
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "charset: UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Length: 67[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Host: api.telegram.org[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "HTTP/1.1 401 Unauthorized[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Server: nginx/1.16.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Date: Sun, 22 Mar 2020 16:07:12 GMT[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Type: application/json[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Length: 58[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Connection: keep-alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << HTTP/1.1 401 Unauthorized
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Server: nginx/1.16.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Date: Sun, 22 Mar 2020 16:07:12 GMT
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Type: application/json
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Length: 58
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Connection: keep-alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Allow-Origin: *
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Authentication required
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - api.telegram.org:443 requested authentication
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Response contains no authentication challenges
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 516][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 516][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 522][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
 ERROR dupatbot Telegram Connection org.telegram.telegrambots.updatesreceivers.DefaultBotSession - Error getting updates
 org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [401] Unauthorized
 	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:118)
@@ -551,57 +530,57 @@ org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error get
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
 DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 516][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 75000
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 75000
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Executing request POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> charset: UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Content-Length: 67
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Content-Type: application/json; charset=UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Host: api.telegram.org
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Connection: Keep-Alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Accept-Encoding: gzip,deflate
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "charset: UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Content-Length: 67[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Host: api.telegram.org[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Connection: Keep-Alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "HTTP/1.1 401 Unauthorized[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Server: nginx/1.16.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Date: Sun, 22 Mar 2020 15:59:52 GMT[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Content-Type: application/json[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Content-Length: 58[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Connection: keep-alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << HTTP/1.1 401 Unauthorized
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Server: nginx/1.16.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Date: Sun, 22 Mar 2020 15:59:52 GMT
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Content-Type: application/json
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Content-Length: 58
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Connection: keep-alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Access-Control-Allow-Origin: *
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> charset: UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Length: 67
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Type: application/json; charset=UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Host: api.telegram.org
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Connection: Keep-Alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Accept-Encoding: gzip,deflate
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "charset: UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Length: 67[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Host: api.telegram.org[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "HTTP/1.1 401 Unauthorized[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Server: nginx/1.16.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Date: Sun, 22 Mar 2020 16:07:13 GMT[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Type: application/json[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Length: 58[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Connection: keep-alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << HTTP/1.1 401 Unauthorized
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Server: nginx/1.16.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Date: Sun, 22 Mar 2020 16:07:13 GMT
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Type: application/json
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Length: 58
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Connection: keep-alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Allow-Origin: *
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Authentication required
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - api.telegram.org:443 requested authentication
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Response contains no authentication challenges
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 516][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 516][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 522][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
 ERROR dupatbot Telegram Connection org.telegram.telegrambots.updatesreceivers.DefaultBotSession - Error getting updates
 org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [401] Unauthorized
 	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:118)
@@ -610,57 +589,57 @@ org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error get
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
 DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 516][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 75000
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 75000
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Executing request POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> charset: UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Content-Length: 67
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Content-Type: application/json; charset=UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Host: api.telegram.org
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Connection: Keep-Alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Accept-Encoding: gzip,deflate
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "charset: UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Content-Length: 67[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Host: api.telegram.org[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Connection: Keep-Alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "HTTP/1.1 401 Unauthorized[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Server: nginx/1.16.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Date: Sun, 22 Mar 2020 15:59:52 GMT[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Content-Type: application/json[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Content-Length: 58[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Connection: keep-alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << HTTP/1.1 401 Unauthorized
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Server: nginx/1.16.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Date: Sun, 22 Mar 2020 15:59:52 GMT
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Content-Type: application/json
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Content-Length: 58
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Connection: keep-alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Access-Control-Allow-Origin: *
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> charset: UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Length: 67
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Type: application/json; charset=UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Host: api.telegram.org
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Connection: Keep-Alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Accept-Encoding: gzip,deflate
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "charset: UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Length: 67[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Host: api.telegram.org[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "HTTP/1.1 401 Unauthorized[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Server: nginx/1.16.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Date: Sun, 22 Mar 2020 16:07:14 GMT[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Type: application/json[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Length: 58[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Connection: keep-alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << HTTP/1.1 401 Unauthorized
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Server: nginx/1.16.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Date: Sun, 22 Mar 2020 16:07:14 GMT
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Type: application/json
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Length: 58
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Connection: keep-alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Allow-Origin: *
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Authentication required
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - api.telegram.org:443 requested authentication
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Response contains no authentication challenges
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 516][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 516][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 522][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
 ERROR dupatbot Telegram Connection org.telegram.telegrambots.updatesreceivers.DefaultBotSession - Error getting updates
 org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [401] Unauthorized
 	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:118)
@@ -669,57 +648,57 @@ org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error get
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
 DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 516][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 75000
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 75000
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Executing request POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> charset: UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Content-Length: 67
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Content-Type: application/json; charset=UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Host: api.telegram.org
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Connection: Keep-Alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Accept-Encoding: gzip,deflate
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "charset: UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Content-Length: 67[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Host: api.telegram.org[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Connection: Keep-Alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "HTTP/1.1 401 Unauthorized[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Server: nginx/1.16.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Date: Sun, 22 Mar 2020 15:59:53 GMT[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Content-Type: application/json[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Content-Length: 58[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Connection: keep-alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << HTTP/1.1 401 Unauthorized
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Server: nginx/1.16.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Date: Sun, 22 Mar 2020 15:59:53 GMT
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Content-Type: application/json
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Content-Length: 58
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Connection: keep-alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Access-Control-Allow-Origin: *
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> charset: UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Length: 67
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Type: application/json; charset=UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Host: api.telegram.org
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Connection: Keep-Alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Accept-Encoding: gzip,deflate
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "charset: UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Length: 67[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Host: api.telegram.org[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "HTTP/1.1 401 Unauthorized[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Server: nginx/1.16.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Date: Sun, 22 Mar 2020 16:07:15 GMT[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Type: application/json[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Length: 58[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Connection: keep-alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << HTTP/1.1 401 Unauthorized
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Server: nginx/1.16.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Date: Sun, 22 Mar 2020 16:07:15 GMT
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Type: application/json
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Length: 58
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Connection: keep-alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Allow-Origin: *
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Authentication required
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - api.telegram.org:443 requested authentication
 DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Response contains no authentication challenges
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 516][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 516][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 522][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
 ERROR dupatbot Telegram Connection org.telegram.telegrambots.updatesreceivers.DefaultBotSession - Error getting updates
 org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [401] Unauthorized
 	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:118)
@@ -728,42 +707,75 @@ org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error get
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
 DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
 DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 516][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 0
-DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-516: set socket timeout to 75000
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 75000
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Executing request POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
 DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> charset: UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Content-Length: 67
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Content-Type: application/json; charset=UTF-8
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Host: api.telegram.org
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Connection: Keep-Alive
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 >> Accept-Encoding: gzip,deflate
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "charset: UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Content-Length: 67[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Host: api.telegram.org[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Connection: Keep-Alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "HTTP/1.1 401 Unauthorized[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Server: nginx/1.16.1[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Date: Sun, 22 Mar 2020 15:59:54 GMT[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Content-Type: application/json[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Content-Length: 58[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Connection: keep-alive[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "[\r][\n]"
-DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-516 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << HTTP/1.1 401 Unauthorized
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Server: nginx/1.16.1
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Date: Sun, 22 Mar 2020 15:59:54 GMT
-DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-516 << Content-Type: application/json
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> charset: UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Length: 67
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Type: application/json; charset=UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Host: api.telegram.org
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Connection: Keep-Alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Accept-Encoding: gzip,deflate
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "charset: UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Length: 67[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Host: api.telegram.org[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 >> "{"offset":261996103,"limit":100,"timeout":50,"method":"getupdates"}"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "HTTP/1.1 401 Unauthorized[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Server: nginx/1.16.1[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Date: Sun, 22 Mar 2020 16:07:16 GMT[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Type: application/json[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Content-Length: 58[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Connection: keep-alive[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "[\r][\n]"
+DEBUG dupatbot Telegram Connection org.apache.http.wire - http-outgoing-522 << "{"ok":false,"error_code":401,"description":"Unauthorized"}"
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << HTTP/1.1 401 Unauthorized
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Server: nginx/1.16.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Date: Sun, 22 Mar 2020 16:07:16 GMT
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Type: application/json
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Content-Length: 58
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Connection: keep-alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Allow-Origin: *
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Authentication required
+DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - api.telegram.org:443 requested authentication
+DEBUG dupatbot Telegram Connection org.apache.http.impl.auth.HttpAuthenticator - Response contains no authentication challenges
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 522][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+ERROR dupatbot Telegram Connection org.telegram.telegrambots.updatesreceivers.DefaultBotSession - Error getting updates
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [401] Unauthorized
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:118)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:263)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:194)
+DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG dupatbot Telegram Connection org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 522][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 0
+DEBUG dupatbot Telegram Connection org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-522: set socket timeout to 75000
+DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Executing request POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
+DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+DEBUG dupatbot Telegram Connection org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> POST /bot1088654621:AAExrcPDL6qK-sS1mgIkPXKa_e73yl-Ar74/getupdates HTTP/1.1
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> charset: UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Length: 67
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Content-Type: application/json; charset=UTF-8
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Host: api.telegram.org
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> Connection: Keep-Alive
+DEBUG dupatbot Telegram Connection org.apache.http.headers - http-outgoing-522 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_181)
