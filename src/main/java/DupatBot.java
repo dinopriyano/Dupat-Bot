@@ -24,9 +24,19 @@ public class DupatBot extends TelegramLongPollingBot {
         SendMessage message = new SendMessage();
         String APIParent = "https://corona.lmao.ninja/";
 
+        String userName = "";
+        if(update.getMessage().getChat().getLastName() != null)
+        {
+            userName = update.getMessage().getChat().getFirstName()+" "+update.getMessage().getChat().getLastName();
+        }
+        else
+        {
+            userName = update.getMessage().getChat().getFirstName();
+        }
+
         if(cmd[0].equalsIgnoreCase("/start"))
         {
-            message.setText("Hello, welcome to Dupat Bot. This is command to communication with me.\n" +
+            message.setText("Hello "+userName.trim()+", welcome to Dupat Bot. This is command to communication with me.\n" +
                     "\n" +
                     "General Command\n" +
                     "[1] To start communication with me, use: <pre>/start</pre>\n" +
@@ -59,6 +69,10 @@ public class DupatBot extends TelegramLongPollingBot {
                     "[3] To see Covid-19 cases in a country, use: <pre>covid {country}</pre> Example: <pre>covid indonesia</pre>\n" +
                     "\n" +
                     "I will provide the data as accurately as possible so that you will be comfortable with me :). Thanks for using Dupat Bot. Enjoy :)").enableHtml(true);
+        }
+        else if(cmd[0].equalsIgnoreCase("hi") || cmd[0].equalsIgnoreCase("hello") || cmd[0].equalsIgnoreCase("halo"))
+        {
+            message.setText("Hello "+userName+"!");
         }
         else if(cmd.length == 1 && cmd[0].equalsIgnoreCase("covid"))
         {
